@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+      <stop offset="0" stop-color="#2c2f34"/><stop offset="1" stop-color="#0b0c0e"/>
+    </radialGradient>
+    <linearGradient id="table" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16181b"/><stop offset="1" stop-color="#050607"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.10"/><stop offset="0.45" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.7 0" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="tableClip"><rect x="196" y="270" width="632" height="484"/></clipPath>
+  <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="0" y1="387" x2="0" y2="637">
+      <stop offset="0" stop-color="#8ae4f4"/><stop offset="0.55" stop-color="#40b6ce"/><stop offset="1" stop-color="#1588ad"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <!-- gem -->
+  <g stroke="#08090a" stroke-width="5" stroke-linejoin="round">
+    <polygon points="168,178 512,178 196,270" fill="#7e838b"/>
+    <polygon points="512,178 512,270 196,270" fill="#5c6066"/>
+    <polygon points="512,178 856,178 828,270" fill="#6d7278"/>
+    <polygon points="512,178 512,270 828,270" fill="#4d5156"/>
+    <polygon points="84,262 168,178 196,270" fill="#43464b"/>
+    <polygon points="856,178 940,262 828,270" fill="#3c3e42"/>
+    <polygon points="940,762 856,846 828,754" fill="#27282a"/>
+    <polygon points="168,846 84,762 196,754" fill="#2e2f33"/>
+    <polygon points="84,262 84,512 196,270" fill="#565a60"/>
+    <polygon points="84,512 196,512 196,270" fill="#3d4045"/>
+    <polygon points="84,512 84,762 196,754" fill="#36383c"/>
+    <polygon points="84,512 196,512 196,754" fill="#4a4d52"/>
+    <polygon points="940,262 940,512 828,270" fill="#484c51"/>
+    <polygon points="940,512 828,512 828,270" fill="#34373b"/>
+    <polygon points="940,512 940,762 828,754" fill="#2c2d31"/>
+    <polygon points="940,512 828,512 828,754" fill="#3d4043"/>
+    <polygon points="168,846 512,846 196,754" fill="#242528"/>
+    <polygon points="512,846 512,754 196,754" fill="#36383c"/>
+    <polygon points="512,846 856,846 828,754" fill="#1e1f22"/>
+    <polygon points="512,846 512,754 828,754" fill="#2e2f33"/>
+  </g>
+  <rect x="196" y="270" width="632" height="484" fill="url(#table)"/>
+  <polygon points="168,178 856,178 940,262 940,762 856,846 168,846 84,762 84,262" fill="none" stroke="#050506" stroke-width="10" stroke-linejoin="round"/>
+  <!-- waveform -> nib -->
+  <g clip-path="url(#tableClip)"><g filter="url(#glow)" transform="translate(512 512) scale(1.13) translate(-553 -512)">
+    <g fill="url(#ink)">
+      <rect x="300" y="477.0" width="16" height="70" rx="8.0"/>
+      <rect x="327" y="437.0" width="16" height="150" rx="8.0"/>
+      <rect x="354" y="387.0" width="16" height="250" rx="8.0"/>
+      <rect x="381" y="427.0" width="16" height="170" rx="8.0"/>
+      <rect x="408" y="457.0" width="16" height="110" rx="8.0"/>
+      <rect x="435" y="482.0" width="16" height="60" rx="8.0"/>
+      <rect x="462" y="447.0" width="16" height="130" rx="8.0"/>
+      <rect x="489" y="412.0" width="16" height="200" rx="8.0"/>
+      <rect x="516" y="452.0" width="16" height="120" rx="8.0"/>
+      <rect x="543" y="477.0" width="16" height="70" rx="8.0"/>
+      <rect x="570" y="492.0" width="16" height="40" rx="8.0"/>
+    </g>
+    <g transform="translate(606 512) scale(1.25) translate(-606 -512)"><path d="M 606 512 C 624 490 654 468 682 464 C 708 466 722 480 738 480 L 738 544 C 722 544 708 558 682 560 C 654 556 624 534 606 512 Z" fill="none" stroke="url(#ink)" stroke-width="14" stroke-linejoin="round"/>
+    <rect x="738" y="470" width="26" height="84" rx="7" fill="none" stroke="url(#ink)" stroke-width="14" stroke-linejoin="round"/>
+    <line x1="620" y1="512" x2="676" y2="512" stroke="url(#ink)" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="692" cy="512" r="15" fill="none" stroke="url(#ink)" stroke-width="9"/></g>
+  </g></g>
+  <rect x="196" y="270" width="632" height="484" fill="url(#gloss)"/>
+  <rect x="196" y="270" width="632" height="484" fill="none" stroke="#08090a" stroke-width="6"/>
+</svg>
